@@ -1,0 +1,196 @@
+/* General Page Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff; /* Light blue background */
+  color: #333; /* Dark text for contrast */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 16px; /* Base font size */
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px; /* Responsive width */
+  height: 100vh;
+  overflow-y: auto; /* Allow vertical scrolling if needed */
+  padding: 20px; /* Padding around the main container */
+}
+
+/* Title */
+.app-title {
+  font-size: 32px; /* Larger font size for title */
+  font-weight: bold;
+  color: #00509e; /* Deep blue for title */
+  margin-bottom: 20px; /* Increased margin for better spacing */
+  text-align: center; /* Center the title */
+}
+
+/* Form Container */
+.form-container {
+  background-color: #ffffff; /* White background */
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Increased shadow for depth */
+  padding: 30px 40px; /* Increased padding for better spacing */
+  width: 100%;
+  max-width: 400px; /* Responsive width */
+  text-align: left; /* Align text to the left for better readability */
+}
+
+/* Form Title */
+.form-title {
+  font-size: 28px; /* Larger font size for title */
+  font-weight: bold;
+  color: #00509e; /* Deep blue for title */
+  margin-bottom: 30px; /* Increased margin for better spacing */
+  text-align: center; /* Center the title */
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased gap between form elements */
+}
+
+/* Labels */
+.form-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: bold;
+  color: #00509e; /* Deep blue for labels */
+  margin-bottom: 5px; /* Added margin for spacing */
+}
+
+/* Inputs */
+.form-input {
+  width: calc(100%-32px); /* Full width */
+  padding: 12px; /* Increased padding for better spacing */
+  border: 2px solid #f7b500; /* Yellow border */
+  border-radius: 8px; /* Rounded edges */
+  font-size: 16px; /* Increased font size */
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-select {
+  width: 100%; /* Full width */
+  padding: 12px; /* Increased padding for better spacing */
+  border: 2px solid #f7b500; /* Yellow border */
+  border-radius: 8px; /* Rounded edges */
+  font-size: 16px; /* Increased font size */
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Focus Effect */
+.form-input:focus,
+.form-select:focus {
+  border-color: #00509e; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 80, 158, 0.3); /* Subtle shadow on focus */
+}
+
+/* Checkbox Container */
+.form-checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Add margin for spacing */
+}
+
+/* Checkbox */
+.form-checkbox {
+  margin-right: 10px; /* Add margin to the right of the checkbox */
+}
+
+/* Button */
+.form-button {
+  background-color: #00509e; /* Deep blue button */
+  color: #fff; /* White text */
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px; /* Increased padding for better spacing */
+  border: none;
+  border-radius: 8px; /* Rounded edges */
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+/* Button Hover */
+.form-button:hover {
+  background-color: #003f7d; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 4px 8px rgba(0, 80, 158, 0.2); /* Subtle shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .main-container {
+    padding: 15px; /* Reduced padding for smaller screens */
+    max-width: 90%; /* Make the form take up more width on smaller screens */
+  }
+
+  .app-title {
+    font-size: 28px; /* Slightly smaller font size for title on smaller screens */
+  }
+
+  .form-container {
+    padding: 20px; /* Reduced padding for smaller screens */
+    max-width: 90%; /* Make the form take up more width on smaller screens */
+  }
+
+  .form-title {
+    font-size: 24px; /* Slightly smaller font size for title on smaller screens */
+  }
+
+  .form-input,
+  .form-select {
+    padding: 10px; /* Slightly reduced padding for inputs on smaller screens */
+  }
+
+  .form-button {
+    padding: 10px; /* Slightly reduced padding for button on smaller screens */
+  }
+
+  .form-group {
+    margin-bottom: 15px; /* Adjust margin between form groups */
+  }
+
+  .form-label {
+    margin-bottom: 5px; /* Adjust margin for labels */
+  }
+}
+
+@media (max-width: 400px) {
+  .main-container {
+    padding: 10px; /* Further reduced padding for very small screens */
+  }
+
+  .app-title {
+    font-size: 24px; /* Even smaller font size for title on very small screens */
+  }
+
+  .form-container {
+    padding: 15px; /* Further reduced padding for very small screens */
+  }
+
+  .form-title {
+    font-size: 20px; /* Even smaller font size for title on very small screens */
+  }
+
+  .form-input,
+  .form-select {
+    padding: 8px; /* Further reduced padding for inputs on very small screens */
+  }
+
+  .form-button {
+    padding: 8px; /* Further reduced padding for button on very small screens */
+  }
+}
